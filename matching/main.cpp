@@ -16,6 +16,8 @@
 #include "matching/symbi.h"
 #include "matching/iedyn.h"
 
+namespace csm {
+
 int main(int argc, char *argv[])
 {
     CLI::App app{"App description"};
@@ -168,4 +170,8 @@ int main(int argc, char *argv[])
 
     //delete incIsoMatch;
     delete mm;
+
+    return 0;
 }
+
+}; // csm

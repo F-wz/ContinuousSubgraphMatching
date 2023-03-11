@@ -8,6 +8,8 @@
 #include "graph/graph.h"
 #include "matching/matching.h"
 
+namespace csm {
+
 class SymBi : public matching
 {
 private:
@@ -81,3 +83,5 @@ private:
     void FindMatches(uint order_index, uint depth, std::vector<uint>& m, size_t &num_results);
 };
 #endif //MATCHING_SYMBI
+
+}; // csm

@@ -9,6 +9,8 @@
 #include "utils/utils.h"
 #include "graph/graph.h"
 
+namespace csm {
+
 Graph::Graph()
 : edge_count_(0)
 , vlabel_count_(0)
@@ -272,3 +274,5 @@ void Graph::PrintMetaData() const
     std::cout << "# vertices = " << NumVertices() <<
         "\n# edges = " << NumEdges() << std::endl;
 }
+
+}; // csm

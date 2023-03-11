@@ -6,6 +6,8 @@
 #include "utils/types.h"
 #include "graph/graph.h"
 
+namespace csm {
+
 class InducedGraph
 {
 public:
@@ -23,5 +25,7 @@ public:
 
     uint GetDegree(uint v);
 };
+
+}; // csm
 
 #endif //GRAPH_INDUCEDGRAPH

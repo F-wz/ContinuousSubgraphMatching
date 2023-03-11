@@ -9,6 +9,8 @@
 #include "graph/induced_graph.h"
 #include "matching/sj_tree.h"
 
+namespace csm {
+
 SJTree::SJTree(Graph& query_graph, Graph& data_graph, 
         uint max_num_results,
         bool print_prep,
@@ -418,3 +420,5 @@ void SJTree::GetMemoryCost(size_t &num_edges, size_t &num_vertices)
         }
     }
 }
+
+}; // csm

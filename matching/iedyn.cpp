@@ -10,6 +10,8 @@
 #include "graph/graph.h"
 #include "matching/iedyn.h"
 
+namespace csm {
+
 IEDyn::IEDyn(Graph& query_graph, Graph& data_graph, 
         uint max_num_results,
         bool print_prep, 
@@ -794,3 +796,5 @@ void IEDyn::GetMemoryCost(size_t &num_edges, size_t &num_vertices)
     std::cout << "\n# valid candidates vertices: " << total_num_valid_candidate_vs;
     std::cout << "\n# valid candidates edges: " << total_num_valid_candidate_es << std::endl;
 }
+
+}; // csm

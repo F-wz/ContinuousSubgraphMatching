@@ -6,6 +6,8 @@
 #include "graph/graph.h"
 #include "graph/induced_graph.h"
 
+namespace csm {
+
 InducedGraph::InducedGraph()
 : graph()
 , v_map_{}
@@ -67,3 +69,5 @@ uint InducedGraph::GetDegree(uint v)
 
     return degree;
 }
+
+}; // csm

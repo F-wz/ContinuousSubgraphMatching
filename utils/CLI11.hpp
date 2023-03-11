@@ -135,6 +135,8 @@
 #endif
 
 
+namespace csm {
+
 
 namespace CLI {
 
@@ -8936,3 +8938,5 @@ inline std::string Formatter::make_option_usage(const Option *opt) const {
 
 
 } // namespace CLI
+
+}; // csm

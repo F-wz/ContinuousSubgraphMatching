@@ -9,6 +9,8 @@
 #include "graph/induced_graph.h"
 #include "matching/matching.h"
 
+namespace csm {
+
 class SJTree : public matching
 {
 private:
@@ -61,5 +63,7 @@ private:
     void AddSingleMatch(const std::vector<uint>& match, 
             TreeNode &node, size_t& num_results);
 };
+
+}; // csm
 
 #endif //MATCHING_SJ_TREE

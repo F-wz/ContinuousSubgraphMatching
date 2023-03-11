@@ -7,6 +7,8 @@
 #include "graph/graph.h"
 #include "matching/matching.h"
 
+namespace csm {
+
 class Graphflow : public matching
 {
 private:
@@ -36,5 +38,7 @@ private:
     void FindMatches(uint order_index, uint depth,
             std::vector<uint> m, size_t &num_results);
 };
+
+}; // csm
 
 #endif //MATCHING_GRAPHFLOW

@@ -16,6 +16,7 @@
 #define Print_Time(str, start) std::cout << str << Duration(start) << \
     "ms" << std::endl
 
+namespace csm {
 
 struct InsertUnit {
     char type;  // 'v' or 'e' 
@@ -57,5 +58,6 @@ struct pair_hash {
     }
 };
 
+}; // csm
 
 #endif //UTILS_TYPES

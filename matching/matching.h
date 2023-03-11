@@ -6,6 +6,8 @@
 #include "utils/types.h"
 #include "graph/graph.h"
 
+namespace csm {
+
 class matching
 {
 protected:
@@ -55,5 +57,7 @@ public:
 
     void PrintCounter();
 };
+
+}; // csm
 
 #endif //CSM_MATCHING_H

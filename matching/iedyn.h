@@ -9,6 +9,8 @@
 #include "graph/graph.h"
 #include "matching/matching.h"
 
+namespace csm {
+
 class IEDyn : public matching
 {
 private:
@@ -76,4 +78,6 @@ private:
     void FindMatchesInitial(uint depth, std::vector<uint>& m, size_t &num_results);
     void FindMatchesIncremental(uint depth, std::vector<uint>& m, size_t &num_results);
 };
+
+}; // csm
 #endif //MATCHING_IEDYN

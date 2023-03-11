@@ -9,6 +9,8 @@
 #include "graph/graph.h"
 #include "matching/turboflux.h"
 
+namespace csm {
+
 TurboFlux::TurboFlux(Graph& query_graph, Graph& data_graph, 
         uint max_num_results,
         bool print_prep, 
@@ -1284,3 +1286,5 @@ void TurboFlux::GetMemoryCost(size_t &num_edges, size_t &num_vertices)
     std::cout << "\n# candidates edges: " << total_num_candidate_es;
     std::cout << "\n# valid candidates edges: " << total_num_valid_candidate_es << std::endl;
 }
+
+}; // csm

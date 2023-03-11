@@ -8,6 +8,8 @@
 #include "graph/graph.h"
 #include "matching/graphflow.h"
 
+namespace csm {
+
 Graphflow::Graphflow(Graph& query_graph, Graph& data_graph, 
         uint max_num_results,
         bool print_prep, 
@@ -431,3 +433,5 @@ void Graphflow::GetMemoryCost(size_t &num_edges, size_t &num_vertices)
     num_edges = 0ul;
     num_vertices = 0ul;
 }
+
+}; // csm

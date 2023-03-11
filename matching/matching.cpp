@@ -5,6 +5,8 @@
 #include "graph/graph.h"
 #include "matching/matching.h"
 
+namespace csm {
+
 matching::matching(Graph& query_graph, Graph& data_graph,
         size_t max_num_results, 
         bool print_prep,
@@ -86,3 +88,5 @@ void matching::PrintCounter()
     std::cout << num_intermediate_results_with_empty_candidate_set_ << " intermediate results with empty candidate set.\n";
     std::cout << num_intermediate_results_without_results_ << " intermediate results without results.\n";
 }
+
+}; // csm

@@ -9,6 +9,8 @@
 #include <sys/stat.h> /* For stat() */
 #include "utils/types.h"
 
+namespace csm {
+
 namespace io {
     inline size_t file_exists(const char *path) {
         struct stat st;
@@ -65,5 +67,7 @@ namespace mem {
         return result;
     }
 }
+
+}; // csm
 
 #endif //UTILS_UTILS

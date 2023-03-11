@@ -7,6 +7,8 @@
 #include "utils/types.h"
 #include "utils/utils.h"
 
+namespace csm {
+
 class Graph
 {
 protected:
@@ -44,5 +46,7 @@ public:
     void LoadUpdateStream(const std::string &path);
     void PrintMetaData() const;
 };
+
+}; // csm
 
 #endif //GRAPH_GRAPH
